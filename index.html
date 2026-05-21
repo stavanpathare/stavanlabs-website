@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stavan Labs - Developer</title>
+    <link rel="icon" type="image/png" href="Assets/Icons/logo.png">
+    <meta name="description" content="Stavan Labs - Building modern, user-focused web applications with clean design and cutting-edge technology.">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="background-grid"></div>
+    <div class="glow-cursor"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <img src="Assets/Icons/logo.png" alt="Stavan Labs Logo" class="logo-image">
+                <span class="logo-text">Stavan Labs</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#technologies" class="nav-link">Technologies</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    STAVAN LABS
+                </div>
+                
+                <h1 class="hero-title">
+                    Building modern <span class="gradient-text">web applications.</span>
+                </h1>
+                
+                <p class="hero-tagline">Crafting <span class="typewriter" aria-live="polite"></span></p>
+                
+                <p class="hero-description">
+                    We build practical, user-focused and scalable web applications with clean design and modern technology.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contact Me</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <div class="mouse"></div>
+                    <p>Scroll to explore</p>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="projects-showcase">
+                    <div class="showcase-card">
+                        <div class="card-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4>UniSummarizer</h4>
+                        <p>AI-powered summarizer</p>
+                        <a href="https://unisummarizer.netlify.app/" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="card-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h4>SpentNest</h4>
+                        <p>Smart expense tracker</p>
+                        <a href="https://spentnest.vercel.app/" class="card-arrow"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="character-section">
+                    <div class="character">
+                        <div class="character-glow"></div>
+                        <div class="character-body">
+                            <div class="character-head"></div>
+                            <div class="character-torso">
+                                <img src="Assets/Icons/logo.png" alt="Stavan Labs Logo" class="sl-badge-logo">
+                            </div>
+                            <div class="character-arms"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-icons">
+                        <div class="float-icon"><i class="fas fa-code"></i></div>
+                        <div class="float-icon"><i class="fas fa-database"></i></div>
+                        <div class="float-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="float-icon"><i class="fas fa-terminal"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-content">
+            <h2 class="section-title">About Stavan Labs</h2>
+            
+            <div class="about-grid">
+                <div class="about-left">
+                    <div class="about-text">
+                        <h3>Independent Software Brand</h3>
+                        <p>
+                            Stavan Labs is an independent software brand dedicated to creating modern web applications, AI-powered products, and scalable digital solutions that solve real-world problems.
+                        </p>
+                    </div>
+                    
+                    <div class="about-founder">
+                        <div class="founder-avatar">ST</div>
+                        <div class="founder-info">
+                            <h4>Stavan Pathare</h4>
+                            <p>Full Stack Developer & CS Student</p>
+                            <p class="founder-bio">Passionate about building modern digital products with clean code and great user experience.</p>
+                        </div>
+                    </div>
+                    
+                    <button id="readMoreBtn" class="btn btn-secondary" type="button">
+                        <span>Read More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="about-right">
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Projects Built</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Learning</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Solve Real Problems</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Passion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="aboutModal" aria-hidden="true">
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="modal-header">
+                <p class="modal-chip">About Stavan Labs</p>
+                <h3 id="aboutModalTitle">About Stavan Labs</h3>
+            </div>
+            <div class="modal-body">
+                <p>Stavan Labs is an independent software brand founded by Stavan Pathare, a Full Stack Developer and Computer Science student passionate about building modern web applications and digital products. Focused on clean design, scalable architecture, and practical solutions, Stavan Labs creates user-focused platforms ranging from productivity tools to AI-powered applications. With experience in the MERN stack and modern deployment technologies, the mission is to transform innovative ideas into real-world products that are fast, functional, and visually modern.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technologies Section -->
+    <section class="technologies" id="technologies">
+        <div class="container">
+            <h2 class="section-title">Technologies I Use</h2>
+            
+            <div class="tech-grid">
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fab fa-html5"></i></div>
+                    <h4>HTML</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h4>CSS</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fab fa-js"></i></div>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fab fa-react"></i></div>
+                    <h4>React</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fab fa-node-js"></i></div>
+                    <h4>Node.js</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fas fa-server"></i></div>
+                    <h4>Express.js</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fas fa-leaf"></i></div>
+                    <h4>MongoDB</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fab fa-git-alt"></i></div>
+                    <h4>Git</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fab fa-github"></i></div>
+                    <h4>GitHub</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fas fa-rocket"></i></div>
+                    <h4>Vercel</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fas fa-link"></i></div>
+                    <h4>Netlify</h4>
+                </div>
+                <div class="tech-card glass-card">
+                    <div class="tech-icon"><i class="fas fa-wind"></i></div>
+                    <h4>Tailwind CSS</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SpentNest</h3>
+                        <p>Smart expense tracker with real-time analytics, budgeting tools, and financial insights.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://spentnest.vercel.app/" class="btn-icon" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/stavanpathare/spent-nest-frontend" class="btn-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>CollegeFind</h3>
+                        <p>College discovery platform with advanced filtering and personalized recommendations.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>JSON</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://collegefind.netlify.app/" class="btn-icon" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/stavanpathare/collegefind" class="btn-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Raja For Mens</h3>
+                        <p>Fashion e-commerce platform for men's clothing with personalized recommendations and seamless shopping experience.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://rajaformens.netlify.app/" class="btn-icon" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/stavanpathare/Ecommerce-Frontend" class="btn-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>UniSummarizer</h3>
+                        <p>AI-powered content summarizer for quick knowledge extraction and learning.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>AI/ML</span>
+                            <span>APIs</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://unisummarizer.netlify.app/" class="btn-icon" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/stavanpathare/unisummarizer-frontend" class="btn-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container contact-content">
+            <div class="contact-left">
+                <h2>Let's build something amazing together.</h2>
+                <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>stavanlabs@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/stavanlabs</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/stavanpathare</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-right">
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <div class="form-border"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                        <div class="form-border"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <div class="form-border"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="Assets/Icons/logo.png" alt="Stavan Labs Logo" class="logo-image">
+                    <span>Stavan Labs</span>
+                </div>
+                <p>© 2026 Stavan Labs. All rights reserved.</p>
+                <p class="footer-tagline">Building modern web applications.</p>
+            </div>
+            
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://github.com/stavanlabs" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/stavanpathare" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:stavanlabs@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
