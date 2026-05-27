@@ -698,6 +698,7 @@ body.modal-open {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 }
 
 .character {
@@ -728,16 +729,18 @@ body.modal-open {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 }
 
 .character-head {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #333 0%, #555 100%);
+    background: linear-gradient(135deg, #3b4a6b 0%, #2b334a 100%);
+    border: 3px solid rgba(14, 165, 233, 0.3);
     border-radius: 50%;
     margin-bottom: 20px;
     position: relative;
-    box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.5), inset 2px 2px 5px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 6px rgba(14, 165, 233, 0.06), inset -2px -2px 6px rgba(0, 0, 0, 0.45);
 }
 
 .character-head::before,
@@ -789,21 +792,23 @@ body.modal-open {
 
 .character-arms {
     position: absolute;
-    top: 70px;
-    left: -30px;
-    width: 160px;
-    height: 40px;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 36px;
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .character-arms::before,
 .character-arms::after {
     content: '';
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #333 0%, #555 100%);
-    border-radius: 8px;
+    width: 44px;
+    height: 28px;
+    background: linear-gradient(135deg, #3b4a6b 0%, #2b334a 100%);
+    border-radius: 12px;
     box-shadow: inset -1px -1px 3px rgba(0, 0, 0, 0.5);
 }
 
