@@ -371,8 +371,7 @@ function createFloatingParticles() {
     }
 }
 
-// Optional: Uncomment to enable floating particles
-// createFloatingParticles();
+createFloatingParticles();
 
 // ========================================
 // LIGHT MODE / DARK MODE TOGGLE (Optional)
