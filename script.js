@@ -90,7 +90,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Add reveal class to sections
-document.querySelectorAll('.about, .technologies, .projects, .contact').forEach(section => {
+document.querySelectorAll('.about, .technologies, .projects, .people, .contact').forEach(section => {
     section.classList.add('reveal');
     revealObserver.observe(section);
 });
